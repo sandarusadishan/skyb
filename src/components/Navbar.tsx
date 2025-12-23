@@ -3,6 +3,7 @@ import { motion, AnimatePresence } from 'framer-motion';
 import { Menu, X } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import { MagneticLink } from './MagneticLink';
+import logo from '../assets/logo.jpg';
 
 const navLinks = [
   { href: '/', label: 'Home' },
@@ -32,7 +33,7 @@ export function Navbar() {
                 className="flex items-center gap-3"
                 whileHover={{ scale: 1.05 }}
               >
-                <img src="/public/logosky2.jpg" alt="SkyB Logo" className="h-10 w-auto" />
+                <img src={logo} alt="SkyB Logo" className="h-10 w-auto" />
                 {/* You can remove the text span below if your logo already has the name */}
                 
               </motion.div>
